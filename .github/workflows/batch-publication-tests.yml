@@ -1,0 +1,163 @@
+name: Batch Publication Testing (10x per test)
+
+on:
+  workflow_dispatch:
+    inputs:
+      iterations:
+        description: 'Number of iterations per test'
+        required: false
+        default: '10'
+        type: string
+      test_subset:
+        description: 'Test subset to run (all, failed, passed)'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - failed
+          - passed
+
+env:
+  PYTHON_VERSION: '3.10'
+
+jobs:
+  # Setup job to prepare the test matrix
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      test-matrix: ${{ steps.set-matrix.outputs.matrix }}
+      iteration-matrix: ${{ steps.set-iterations.outputs.iterations }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set test matrix
+        id: set-matrix
+        run: |
+          if [ "${{ inputs.test_subset }}" = "failed" ]; then
+            echo 'matrix=["TEST_002","TEST_004","TEST_006","TEST_009","TEST_012","TEST_014","TEST_016","TEST_019"]' >> $GITHUB_OUTPUT
+          elif [ "${{ inputs.test_subset }}" = "passed" ]; then
+            echo 'matrix=["TEST_001","TEST_003","TEST_005","TEST_007","TEST_008","TEST_010","TEST_011","TEST_013","TEST_015","TEST_017","TEST_018"]' >> $GITHUB_OUTPUT
+          else
+            echo 'matrix=["TEST_001","TEST_002","TEST_003","TEST_004","TEST_005","TEST_006","TEST_007","TEST_008","TEST_009","TEST_010","TEST_011","TEST_012","TEST_013","TEST_014","TEST_015","TEST_016","TEST_017","TEST_018","TEST_019"]' >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set iteration matrix
+        id: set-iterations
+        run: |
+          iterations=${{ inputs.iterations || '10' }}
+          # Generate array [1,2,3,...,n]
+          iter_array=$(python3 -c "import json; print(json.dumps(list(range(1, $iterations + 1))))")
+          echo "iterations=$iter_array" >> $GITHUB_OUTPUT
+
+  # Run tests in parallel using matrix strategy
+  run-tests:
+    needs: setup
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        test_id: ${{ fromJson(needs.setup.outputs.test-matrix) }}
+        iteration: ${{ fromJson(needs.setup.outputs.iteration-matrix) }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas pyarrow numpy
+
+      - name: Run single test iteration
+        id: run-test
+        run: |
+          python publication_evidence/scripts/run_single_test.py \
+            --test-id ${{ matrix.test_id }} \
+            --iteration ${{ matrix.iteration }} \
+            --output-dir ./results/${{ matrix.test_id }}/iter_${{ matrix.iteration }}
+
+      - name: Upload test artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-result-${{ matrix.test_id }}-iter-${{ matrix.iteration }}
+          path: ./results/${{ matrix.test_id }}/iter_${{ matrix.iteration }}/
+          retention-days: 30
+
+  # Aggregate all results
+  aggregate-results:
+    needs: [setup, run-tests]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas pyarrow numpy
+
+      - name: Download all test artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: ./all-results
+          pattern: test-result-*
+
+      - name: Aggregate results
+        run: |
+          python publication_evidence/scripts/aggregate_batch_results.py \
+            --input-dir ./all-results \
+            --output-dir ./aggregated-results \
+            --iterations ${{ inputs.iterations || '10' }}
+
+      - name: Upload aggregated results
+        uses: actions/upload-artifact@v4
+        with:
+          name: aggregated-batch-results
+          path: ./aggregated-results/
+          retention-days: 90
+
+      - name: Generate summary report
+        run: |
+          python publication_evidence/scripts/generate_batch_summary.py \
+            --input-dir ./aggregated-results \
+            --output-file ./batch_summary_report.json
+
+      - name: Upload summary report
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch-summary-report
+          path: ./batch_summary_report.json
+          retention-days: 90
+
+      - name: Post summary to job
+        run: |
+          echo "## Batch Test Results Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          python -c "
+          import json
+          with open('./batch_summary_report.json') as f:
+              data = json.load(f)
+          print(f\"**Total Tests:** {data.get('total_tests', 'N/A')}\")
+          print(f\"**Iterations per Test:** {data.get('iterations_per_test', 'N/A')}\")
+          print(f\"**Total Executions:** {data.get('total_executions', 'N/A')}\")
+          print('')
+          print('### Pass Rate by Test')
+          print('| Test ID | Pass Rate | Mean Value | Std Dev |')
+          print('|---------|-----------|------------|---------|')
+          for test in data.get('test_results', []):
+              print(f\"| {test['test_id']} | {test['pass_rate']}% | {test['mean_value']:.2f} | {test['std_dev']:.2f} |\")
+          " >> $GITHUB_STEP_SUMMARY

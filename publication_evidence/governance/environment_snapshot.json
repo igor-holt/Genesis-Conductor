@@ -1,0 +1,57 @@
+{
+  "snapshot_id": "ENV_2025_12_31",
+  "created_at": "2025-12-31T09:21:54.640240Z",
+  "hardware": {
+    "cpu": {
+      "model": "Intel Xeon Gold 6248R",
+      "cores": 48,
+      "threads": 96,
+      "base_frequency_ghz": 3.0,
+      "turbo_frequency_ghz": 4.0,
+      "tdp_watts": 205
+    },
+    "memory": {
+      "total_gb": 256,
+      "type": "DDR4-2933",
+      "channels": 8
+    },
+    "gpu": {
+      "model": "NVIDIA A100",
+      "memory_gb": 40,
+      "cuda_cores": 6912,
+      "tdp_watts": 400
+    },
+    "storage": {
+      "type": "NVMe SSD",
+      "capacity_gb": 2000,
+      "model": "Samsung 980 Pro"
+    },
+    "power_measurement": {
+      "method": "RAPL (Running Average Power Limit)",
+      "resolution_us": 1000,
+      "accuracy_percent": 5
+    }
+  },
+  "software": {
+    "os": "Ubuntu 22.04.3 LTS",
+    "kernel": "6.2.0-39-generic",
+    "python": "3.10.12",
+    "pytorch": "2.1.0",
+    "cuda": "12.1",
+    "kubernetes": "1.28.3"
+  },
+  "configuration": {
+    "thermal_limit_celsius": 85,
+    "power_limit_watts": 400,
+    "latency_limit_p99_ms": 500,
+    "cost_limit_per_request": 0.005
+  },
+  "reproducibility_checklist": [
+    "Hardware specifications documented",
+    "Software versions locked",
+    "Configuration parameters recorded",
+    "Measurement methodology specified",
+    "Test execution sequence defined",
+    "Expected variance bounds documented"
+  ]
+}

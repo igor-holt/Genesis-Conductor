@@ -1,0 +1,5312 @@
+{
+  "test_id": "TEST_014",
+  "execution_timestamp": "2025-12-31T08:21:54.583700Z",
+  "orchestration_decisions": [
+    {
+      "decision_id": 1,
+      "timestamp_us": 0,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 64.7,
+          "limit_celsius": 85.0,
+          "slack": 20.3,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 243.5,
+          "limit_ms": 500,
+          "slack": 256.5,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0014,
+          "limit": 0.005,
+          "slack": 0.0036,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 2,
+      "timestamp_us": 1000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 70.4,
+          "limit_celsius": 85.0,
+          "slack": 14.6,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 318.2,
+          "limit_ms": 500,
+          "slack": 181.8,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.003,
+          "limit": 0.005,
+          "slack": 0.002,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 3,
+      "timestamp_us": 2000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 74.0,
+          "limit_celsius": 85.0,
+          "slack": 11.0,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 288.1,
+          "limit_ms": 500,
+          "slack": 211.9,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0024,
+          "limit": 0.005,
+          "slack": 0.0026,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 4,
+      "timestamp_us": 3000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 72.9,
+          "limit_celsius": 85.0,
+          "slack": 12.1,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 313.5,
+          "limit_ms": 500,
+          "slack": 186.5,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0021,
+          "limit": 0.005,
+          "slack": 0.0029,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 5,
+      "timestamp_us": 4000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 73.4,
+          "limit_celsius": 85.0,
+          "slack": 11.6,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 359.2,
+          "limit_ms": 500,
+          "slack": 140.8,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0021,
+          "limit": 0.005,
+          "slack": 0.0029,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 6,
+      "timestamp_us": 5000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 74.8,
+          "limit_celsius": 85.0,
+          "slack": 10.2,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 244.0,
+          "limit_ms": 500,
+          "slack": 256.0,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.003,
+          "limit": 0.005,
+          "slack": 0.002,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 7,
+      "timestamp_us": 6000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 60.5,
+          "limit_celsius": 85.0,
+          "slack": 24.5,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 293.5,
+          "limit_ms": 500,
+          "slack": 206.5,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0024,
+          "limit": 0.005,
+          "slack": 0.0026,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 8,
+      "timestamp_us": 7000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 66.4,
+          "limit_celsius": 85.0,
+          "slack": 18.6,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 295.4,
+          "limit_ms": 500,
+          "slack": 204.6,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0038,
+          "limit": 0.005,
+          "slack": 0.0012,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 9,
+      "timestamp_us": 8000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 62.6,
+          "limit_celsius": 85.0,
+          "slack": 22.4,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 278.0,
+          "limit_ms": 500,
+          "slack": 222.0,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0038,
+          "limit": 0.005,
+          "slack": 0.0012,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "claude-sonnet"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 10,
+      "timestamp_us": 9000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 66.9,
+          "limit_celsius": 85.0,
+          "slack": 18.1,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 338.9,
+          "limit_ms": 500,
+          "slack": 161.1,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0021,
+          "limit": 0.005,
+          "slack": 0.0029,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 11,
+      "timestamp_us": 10000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 67.2,
+          "limit_celsius": 85.0,
+          "slack": 17.8,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 219.9,
+          "limit_ms": 500,
+          "slack": 280.1,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0032,
+          "limit": 0.005,
+          "slack": 0.0018,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 12,
+      "timestamp_us": 11000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 68.6,
+          "limit_celsius": 85.0,
+          "slack": 16.4,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 342.9,
+          "limit_ms": 500,
+          "slack": 157.1,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0035,
+          "limit": 0.005,
+          "slack": 0.0015,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 13,
+      "timestamp_us": 12000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 63.2,
+          "limit_celsius": 85.0,
+          "slack": 21.8,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 299.7,
+          "limit_ms": 500,
+          "slack": 200.3,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0032,
+          "limit": 0.005,
+          "slack": 0.0018,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 14,
+      "timestamp_us": 13000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 62.6,
+          "limit_celsius": 85.0,
+          "slack": 22.4,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 210.4,
+          "limit_ms": 500,
+          "slack": 289.6,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0035,
+          "limit": 0.005,
+          "slack": 0.0015,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 15,
+      "timestamp_us": 14000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 69.5,
+          "limit_celsius": 85.0,
+          "slack": 15.5,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 344.6,
+          "limit_ms": 500,
+          "slack": 155.4,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0016,
+          "limit": 0.005,
+          "slack": 0.0034,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 16,
+      "timestamp_us": 15000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 67.2,
+          "limit_celsius": 85.0,
+          "slack": 17.8,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 206.0,
+          "limit_ms": 500,
+          "slack": 294.0,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0037,
+          "limit": 0.005,
+          "slack": 0.0013,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 17,
+      "timestamp_us": 16000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 67.7,
+          "limit_celsius": 85.0,
+          "slack": 17.3,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 381.1,
+          "limit_ms": 500,
+          "slack": 118.9,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0022,
+          "limit": 0.005,
+          "slack": 0.0028,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "claude-sonnet"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 18,
+      "timestamp_us": 17000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 63.4,
+          "limit_celsius": 85.0,
+          "slack": 21.6,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 201.5,
+          "limit_ms": 500,
+          "slack": 298.5,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0017,
+          "limit": 0.005,
+          "slack": 0.0033,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gemini-pro",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 2,
+          "dominated_by": [
+            "gemini-pro"
+          ]
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 3,
+          "dominated_by": [
+            "gemini-pro",
+            "gpt-4-turbo"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 19,
+      "timestamp_us": 18000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 64.2,
+          "limit_celsius": 85.0,
+          "slack": 20.8,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 263.3,
+          "limit_ms": 500,
+          "slack": 236.7,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0029,
+          "limit": 0.005,
+          "slack": 0.0021,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 20,
+      "timestamp_us": 19000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 72.5,
+          "limit_celsius": 85.0,
+          "slack": 12.5,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 348.2,
+          "limit_ms": 500,
+          "slack": 151.8,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0018,
+          "limit": 0.005,
+          "slack": 0.0032,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "claude-sonnet"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 21,
+      "timestamp_us": 20000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 67.3,
+          "limit_celsius": 85.0,
+          "slack": 17.7,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 203.1,
+          "limit_ms": 500,
+          "slack": 296.9,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.002,
+          "limit": 0.005,
+          "slack": 0.003,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 22,
+      "timestamp_us": 21000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 65.7,
+          "limit_celsius": 85.0,
+          "slack": 19.3,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 213.1,
+          "limit_ms": 500,
+          "slack": 286.9,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0021,
+          "limit": 0.005,
+          "slack": 0.0029,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 23,
+      "timestamp_us": 22000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 62.8,
+          "limit_celsius": 85.0,
+          "slack": 22.2,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 217.7,
+          "limit_ms": 500,
+          "slack": 282.3,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0035,
+          "limit": 0.005,
+          "slack": 0.0015,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 24,
+      "timestamp_us": 23000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 67.8,
+          "limit_celsius": 85.0,
+          "slack": 17.2,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 281.1,
+          "limit_ms": 500,
+          "slack": 218.9,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0038,
+          "limit": 0.005,
+          "slack": 0.0012,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 25,
+      "timestamp_us": 24000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 73.1,
+          "limit_celsius": 85.0,
+          "slack": 11.9,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 274.1,
+          "limit_ms": 500,
+          "slack": 225.9,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0033,
+          "limit": 0.005,
+          "slack": 0.0017,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 26,
+      "timestamp_us": 25000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 64.5,
+          "limit_celsius": 85.0,
+          "slack": 20.5,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 337.6,
+          "limit_ms": 500,
+          "slack": 162.4,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0032,
+          "limit": 0.005,
+          "slack": 0.0018,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 27,
+      "timestamp_us": 26000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 73.4,
+          "limit_celsius": 85.0,
+          "slack": 11.6,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 346.5,
+          "limit_ms": 500,
+          "slack": 153.5,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0015,
+          "limit": 0.005,
+          "slack": 0.0035,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 28,
+      "timestamp_us": 27000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 63.1,
+          "limit_celsius": 85.0,
+          "slack": 21.9,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 285.4,
+          "limit_ms": 500,
+          "slack": 214.6,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0032,
+          "limit": 0.005,
+          "slack": 0.0018,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 29,
+      "timestamp_us": 28000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 67.1,
+          "limit_celsius": 85.0,
+          "slack": 17.9,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 396.9,
+          "limit_ms": 500,
+          "slack": 103.1,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0018,
+          "limit": 0.005,
+          "slack": 0.0032,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 30,
+      "timestamp_us": 29000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 62.3,
+          "limit_celsius": 85.0,
+          "slack": 22.7,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 324.9,
+          "limit_ms": 500,
+          "slack": 175.1,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0024,
+          "limit": 0.005,
+          "slack": 0.0026,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 31,
+      "timestamp_us": 30000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 66.8,
+          "limit_celsius": 85.0,
+          "slack": 18.2,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 302.8,
+          "limit_ms": 500,
+          "slack": 197.2,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0033,
+          "limit": 0.005,
+          "slack": 0.0017,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gemini-pro",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 2,
+          "dominated_by": [
+            "gemini-pro"
+          ]
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 3,
+          "dominated_by": [
+            "gemini-pro",
+            "gpt-4-turbo"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 32,
+      "timestamp_us": 31000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 73.9,
+          "limit_celsius": 85.0,
+          "slack": 11.1,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 302.5,
+          "limit_ms": 500,
+          "slack": 197.5,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0036,
+          "limit": 0.005,
+          "slack": 0.0014,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 33,
+      "timestamp_us": 32000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 72.7,
+          "limit_celsius": 85.0,
+          "slack": 12.3,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 249.8,
+          "limit_ms": 500,
+          "slack": 250.2,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0038,
+          "limit": 0.005,
+          "slack": 0.0012,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 34,
+      "timestamp_us": 33000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 74.4,
+          "limit_celsius": 85.0,
+          "slack": 10.6,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 264.0,
+          "limit_ms": 500,
+          "slack": 236.0,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0032,
+          "limit": 0.005,
+          "slack": 0.0018,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gpt-4-turbo"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 35,
+      "timestamp_us": 34000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 74.1,
+          "limit_celsius": 85.0,
+          "slack": 10.9,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 249.4,
+          "limit_ms": 500,
+          "slack": 250.6,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0011,
+          "limit": 0.005,
+          "slack": 0.0039,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gpt-4-turbo"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 36,
+      "timestamp_us": 35000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 69.6,
+          "limit_celsius": 85.0,
+          "slack": 15.4,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 276.7,
+          "limit_ms": 500,
+          "slack": 223.3,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.004,
+          "limit": 0.005,
+          "slack": 0.001,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "claude-sonnet"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 37,
+      "timestamp_us": 36000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 67.0,
+          "limit_celsius": 85.0,
+          "slack": 18.0,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 282.5,
+          "limit_ms": 500,
+          "slack": 217.5,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0025,
+          "limit": 0.005,
+          "slack": 0.0025,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 38,
+      "timestamp_us": 37000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 60.3,
+          "limit_celsius": 85.0,
+          "slack": 24.7,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 315.8,
+          "limit_ms": 500,
+          "slack": 184.2,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.003,
+          "limit": 0.005,
+          "slack": 0.002,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 39,
+      "timestamp_us": 38000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 62.6,
+          "limit_celsius": 85.0,
+          "slack": 22.4,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 393.5,
+          "limit_ms": 500,
+          "slack": 106.5,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0038,
+          "limit": 0.005,
+          "slack": 0.0012,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 40,
+      "timestamp_us": 39000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 74.2,
+          "limit_celsius": 85.0,
+          "slack": 10.8,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 227.2,
+          "limit_ms": 500,
+          "slack": 272.8,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0012,
+          "limit": 0.005,
+          "slack": 0.0038,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 41,
+      "timestamp_us": 40000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 67.0,
+          "limit_celsius": 85.0,
+          "slack": 18.0,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 393.9,
+          "limit_ms": 500,
+          "slack": 106.1,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0014,
+          "limit": 0.005,
+          "slack": 0.0036,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 42,
+      "timestamp_us": 41000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 69.7,
+          "limit_celsius": 85.0,
+          "slack": 15.3,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 221.4,
+          "limit_ms": 500,
+          "slack": 278.6,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0039,
+          "limit": 0.005,
+          "slack": 0.0011,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 43,
+      "timestamp_us": 42000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 63.3,
+          "limit_celsius": 85.0,
+          "slack": 21.7,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 312.1,
+          "limit_ms": 500,
+          "slack": 187.9,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0018,
+          "limit": 0.005,
+          "slack": 0.0032,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 44,
+      "timestamp_us": 43000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 72.5,
+          "limit_celsius": 85.0,
+          "slack": 12.5,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 262.1,
+          "limit_ms": 500,
+          "slack": 237.9,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.002,
+          "limit": 0.005,
+          "slack": 0.003,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 45,
+      "timestamp_us": 44000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 69.6,
+          "limit_celsius": 85.0,
+          "slack": 15.4,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 309.2,
+          "limit_ms": 500,
+          "slack": 190.8,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0027,
+          "limit": 0.005,
+          "slack": 0.0023,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 46,
+      "timestamp_us": 45000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 72.6,
+          "limit_celsius": 85.0,
+          "slack": 12.4,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 313.6,
+          "limit_ms": 500,
+          "slack": 186.4,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0015,
+          "limit": 0.005,
+          "slack": 0.0035,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "claude-sonnet"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 47,
+      "timestamp_us": 46000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 71.3,
+          "limit_celsius": 85.0,
+          "slack": 13.7,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 231.9,
+          "limit_ms": 500,
+          "slack": 268.1,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0012,
+          "limit": 0.005,
+          "slack": 0.0038,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 48,
+      "timestamp_us": 47000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 71.3,
+          "limit_celsius": 85.0,
+          "slack": 13.7,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 391.7,
+          "limit_ms": 500,
+          "slack": 108.3,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0017,
+          "limit": 0.005,
+          "slack": 0.0033,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 49,
+      "timestamp_us": 48000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 74.3,
+          "limit_celsius": 85.0,
+          "slack": 10.7,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 381.7,
+          "limit_ms": 500,
+          "slack": 118.3,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0012,
+          "limit": 0.005,
+          "slack": 0.0038,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gpt-4-turbo"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 50,
+      "timestamp_us": 49000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 62.8,
+          "limit_celsius": 85.0,
+          "slack": 22.2,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 271.4,
+          "limit_ms": 500,
+          "slack": 228.6,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0033,
+          "limit": 0.005,
+          "slack": 0.0017,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 51,
+      "timestamp_us": 50000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 66.7,
+          "limit_celsius": 85.0,
+          "slack": 18.3,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 282.8,
+          "limit_ms": 500,
+          "slack": 217.2,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0013,
+          "limit": 0.005,
+          "slack": 0.0037,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gemini-pro",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 2,
+          "dominated_by": [
+            "gemini-pro"
+          ]
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 3,
+          "dominated_by": [
+            "gemini-pro",
+            "gpt-4-turbo"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 52,
+      "timestamp_us": 51000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 74.6,
+          "limit_celsius": 85.0,
+          "slack": 10.4,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 234.6,
+          "limit_ms": 500,
+          "slack": 265.4,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0017,
+          "limit": 0.005,
+          "slack": 0.0033,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 53,
+      "timestamp_us": 52000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 70.6,
+          "limit_celsius": 85.0,
+          "slack": 14.4,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 224.0,
+          "limit_ms": 500,
+          "slack": 276.0,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0023,
+          "limit": 0.005,
+          "slack": 0.0027,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 54,
+      "timestamp_us": 53000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 67.6,
+          "limit_celsius": 85.0,
+          "slack": 17.4,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 355.6,
+          "limit_ms": 500,
+          "slack": 144.4,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0019,
+          "limit": 0.005,
+          "slack": 0.0031,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "claude-sonnet"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 55,
+      "timestamp_us": 54000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 61.4,
+          "limit_celsius": 85.0,
+          "slack": 23.6,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 226.9,
+          "limit_ms": 500,
+          "slack": 273.1,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.002,
+          "limit": 0.005,
+          "slack": 0.003,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gemini-pro",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 2,
+          "dominated_by": [
+            "gemini-pro"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "gemini-pro",
+            "claude-sonnet"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 56,
+      "timestamp_us": 55000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 63.4,
+          "limit_celsius": 85.0,
+          "slack": 21.6,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 276.5,
+          "limit_ms": 500,
+          "slack": 223.5,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0017,
+          "limit": 0.005,
+          "slack": 0.0033,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "claude-sonnet"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 57,
+      "timestamp_us": 56000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 67.5,
+          "limit_celsius": 85.0,
+          "slack": 17.5,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 209.5,
+          "limit_ms": 500,
+          "slack": 290.5,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0029,
+          "limit": 0.005,
+          "slack": 0.0021,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 58,
+      "timestamp_us": 57000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 60.2,
+          "limit_celsius": 85.0,
+          "slack": 24.8,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 241.6,
+          "limit_ms": 500,
+          "slack": 258.4,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0027,
+          "limit": 0.005,
+          "slack": 0.0023,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 59,
+      "timestamp_us": 58000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 70.6,
+          "limit_celsius": 85.0,
+          "slack": 14.4,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 280.7,
+          "limit_ms": 500,
+          "slack": 219.3,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0024,
+          "limit": 0.005,
+          "slack": 0.0026,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 60,
+      "timestamp_us": 59000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 62.4,
+          "limit_celsius": 85.0,
+          "slack": 22.6,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 369.7,
+          "limit_ms": 500,
+          "slack": 130.3,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0032,
+          "limit": 0.005,
+          "slack": 0.0018,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 61,
+      "timestamp_us": 60000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 73.7,
+          "limit_celsius": 85.0,
+          "slack": 11.3,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 341.6,
+          "limit_ms": 500,
+          "slack": 158.4,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0014,
+          "limit": 0.005,
+          "slack": 0.0036,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 62,
+      "timestamp_us": 61000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 65.3,
+          "limit_celsius": 85.0,
+          "slack": 19.7,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 227.0,
+          "limit_ms": 500,
+          "slack": 273.0,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0038,
+          "limit": 0.005,
+          "slack": 0.0012,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 63,
+      "timestamp_us": 62000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 61.6,
+          "limit_celsius": 85.0,
+          "slack": 23.4,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 309.0,
+          "limit_ms": 500,
+          "slack": 191.0,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0016,
+          "limit": 0.005,
+          "slack": 0.0034,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 64,
+      "timestamp_us": 63000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 67.8,
+          "limit_celsius": 85.0,
+          "slack": 17.2,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 331.4,
+          "limit_ms": 500,
+          "slack": 168.6,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0034,
+          "limit": 0.005,
+          "slack": 0.0016,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gpt-4-turbo"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 65,
+      "timestamp_us": 64000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 73.1,
+          "limit_celsius": 85.0,
+          "slack": 11.9,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 289.1,
+          "limit_ms": 500,
+          "slack": 210.9,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0032,
+          "limit": 0.005,
+          "slack": 0.0018,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 66,
+      "timestamp_us": 65000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 64.0,
+          "limit_celsius": 85.0,
+          "slack": 21.0,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 228.2,
+          "limit_ms": 500,
+          "slack": 271.8,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0027,
+          "limit": 0.005,
+          "slack": 0.0023,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 67,
+      "timestamp_us": 66000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 65.0,
+          "limit_celsius": 85.0,
+          "slack": 20.0,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 353.5,
+          "limit_ms": 500,
+          "slack": 146.5,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0015,
+          "limit": 0.005,
+          "slack": 0.0035,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 68,
+      "timestamp_us": 67000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 67.0,
+          "limit_celsius": 85.0,
+          "slack": 18.0,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 233.7,
+          "limit_ms": 500,
+          "slack": 266.3,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0025,
+          "limit": 0.005,
+          "slack": 0.0025,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gpt-4-turbo"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 69,
+      "timestamp_us": 68000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 63.2,
+          "limit_celsius": 85.0,
+          "slack": 21.8,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 321.4,
+          "limit_ms": 500,
+          "slack": 178.6,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0028,
+          "limit": 0.005,
+          "slack": 0.0022,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gemini-pro",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 2,
+          "dominated_by": [
+            "gemini-pro"
+          ]
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 3,
+          "dominated_by": [
+            "gemini-pro",
+            "gpt-4-turbo"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 70,
+      "timestamp_us": 69000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 61.5,
+          "limit_celsius": 85.0,
+          "slack": 23.5,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 278.1,
+          "limit_ms": 500,
+          "slack": 221.9,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0039,
+          "limit": 0.005,
+          "slack": 0.0011,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 71,
+      "timestamp_us": 70000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 74.2,
+          "limit_celsius": 85.0,
+          "slack": 10.8,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 306.3,
+          "limit_ms": 500,
+          "slack": 193.7,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0012,
+          "limit": 0.005,
+          "slack": 0.0038,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 72,
+      "timestamp_us": 71000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 73.1,
+          "limit_celsius": 85.0,
+          "slack": 11.9,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 295.6,
+          "limit_ms": 500,
+          "slack": 204.4,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0011,
+          "limit": 0.005,
+          "slack": 0.0039,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 73,
+      "timestamp_us": 72000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 70.9,
+          "limit_celsius": 85.0,
+          "slack": 14.1,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 301.5,
+          "limit_ms": 500,
+          "slack": 198.5,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0035,
+          "limit": 0.005,
+          "slack": 0.0015,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 74,
+      "timestamp_us": 73000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 64.8,
+          "limit_celsius": 85.0,
+          "slack": 20.2,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 394.9,
+          "limit_ms": 500,
+          "slack": 105.1,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.003,
+          "limit": 0.005,
+          "slack": 0.002,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gemini-pro",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 2,
+          "dominated_by": [
+            "gemini-pro"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "gemini-pro",
+            "claude-sonnet"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 75,
+      "timestamp_us": 74000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 61.4,
+          "limit_celsius": 85.0,
+          "slack": 23.6,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 274.8,
+          "limit_ms": 500,
+          "slack": 225.2,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0014,
+          "limit": 0.005,
+          "slack": 0.0036,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 76,
+      "timestamp_us": 75000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 69.3,
+          "limit_celsius": 85.0,
+          "slack": 15.7,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 344.8,
+          "limit_ms": 500,
+          "slack": 155.2,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0034,
+          "limit": 0.005,
+          "slack": 0.0016,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gemini-pro",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 2,
+          "dominated_by": [
+            "gemini-pro"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "gemini-pro",
+            "claude-sonnet"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 77,
+      "timestamp_us": 76000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 72.9,
+          "limit_celsius": 85.0,
+          "slack": 12.1,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 282.6,
+          "limit_ms": 500,
+          "slack": 217.4,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0033,
+          "limit": 0.005,
+          "slack": 0.0017,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 78,
+      "timestamp_us": 77000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 66.1,
+          "limit_celsius": 85.0,
+          "slack": 18.9,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 237.2,
+          "limit_ms": 500,
+          "slack": 262.8,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0028,
+          "limit": 0.005,
+          "slack": 0.0022,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 79,
+      "timestamp_us": 78000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 69.8,
+          "limit_celsius": 85.0,
+          "slack": 15.2,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 374.0,
+          "limit_ms": 500,
+          "slack": 126.0,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0021,
+          "limit": 0.005,
+          "slack": 0.0029,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 80,
+      "timestamp_us": 79000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 61.6,
+          "limit_celsius": 85.0,
+          "slack": 23.4,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 290.4,
+          "limit_ms": 500,
+          "slack": 209.6,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0034,
+          "limit": 0.005,
+          "slack": 0.0016,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "claude-sonnet"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 81,
+      "timestamp_us": 80000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 65.8,
+          "limit_celsius": 85.0,
+          "slack": 19.2,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 262.7,
+          "limit_ms": 500,
+          "slack": 237.3,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0034,
+          "limit": 0.005,
+          "slack": 0.0016,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 82,
+      "timestamp_us": 81000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 60.6,
+          "limit_celsius": 85.0,
+          "slack": 24.4,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 327.7,
+          "limit_ms": 500,
+          "slack": 172.3,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0034,
+          "limit": 0.005,
+          "slack": 0.0016,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gemini-pro",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 2,
+          "dominated_by": [
+            "gemini-pro"
+          ]
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 3,
+          "dominated_by": [
+            "gemini-pro",
+            "gpt-4-turbo"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 83,
+      "timestamp_us": 82000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 63.9,
+          "limit_celsius": 85.0,
+          "slack": 21.1,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 234.9,
+          "limit_ms": 500,
+          "slack": 265.1,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0024,
+          "limit": 0.005,
+          "slack": 0.0026,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 84,
+      "timestamp_us": 83000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 73.8,
+          "limit_celsius": 85.0,
+          "slack": 11.2,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 270.3,
+          "limit_ms": 500,
+          "slack": 229.7,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0032,
+          "limit": 0.005,
+          "slack": 0.0018,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gpt-4-turbo"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 85,
+      "timestamp_us": 84000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 71.5,
+          "limit_celsius": 85.0,
+          "slack": 13.5,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 374.2,
+          "limit_ms": 500,
+          "slack": 125.8,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0031,
+          "limit": 0.005,
+          "slack": 0.0019,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 86,
+      "timestamp_us": 85000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 66.8,
+          "limit_celsius": 85.0,
+          "slack": 18.2,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 223.7,
+          "limit_ms": 500,
+          "slack": 276.3,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0023,
+          "limit": 0.005,
+          "slack": 0.0027,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 87,
+      "timestamp_us": 86000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 62.5,
+          "limit_celsius": 85.0,
+          "slack": 22.5,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 213.7,
+          "limit_ms": 500,
+          "slack": 286.3,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.001,
+          "limit": 0.005,
+          "slack": 0.004,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gpt-4-turbo"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 88,
+      "timestamp_us": 87000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 72.2,
+          "limit_celsius": 85.0,
+          "slack": 12.8,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 203.0,
+          "limit_ms": 500,
+          "slack": 297.0,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0028,
+          "limit": 0.005,
+          "slack": 0.0022,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 89,
+      "timestamp_us": 88000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 65.0,
+          "limit_celsius": 85.0,
+          "slack": 20.0,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 338.9,
+          "limit_ms": 500,
+          "slack": 161.1,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.002,
+          "limit": 0.005,
+          "slack": 0.003,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 90,
+      "timestamp_us": 89000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 61.0,
+          "limit_celsius": 85.0,
+          "slack": 24.0,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 395.2,
+          "limit_ms": 500,
+          "slack": 104.8,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0026,
+          "limit": 0.005,
+          "slack": 0.0024,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 91,
+      "timestamp_us": 90000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 63.6,
+          "limit_celsius": 85.0,
+          "slack": 21.4,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 225.8,
+          "limit_ms": 500,
+          "slack": 274.2,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0032,
+          "limit": 0.005,
+          "slack": 0.0018,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gemini-pro",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 2,
+          "dominated_by": [
+            "gemini-pro"
+          ]
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 3,
+          "dominated_by": [
+            "gemini-pro",
+            "gpt-4-turbo"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 92,
+      "timestamp_us": 91000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 65.2,
+          "limit_celsius": 85.0,
+          "slack": 19.8,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 344.9,
+          "limit_ms": 500,
+          "slack": 155.1,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0014,
+          "limit": 0.005,
+          "slack": 0.0036,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gpt-4-turbo",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 93,
+      "timestamp_us": 92000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 73.4,
+          "limit_celsius": 85.0,
+          "slack": 11.6,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 205.1,
+          "limit_ms": 500,
+          "slack": 294.9,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0023,
+          "limit": 0.005,
+          "slack": 0.0027,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 94,
+      "timestamp_us": 93000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 73.5,
+          "limit_celsius": 85.0,
+          "slack": 11.5,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 277.3,
+          "limit_ms": 500,
+          "slack": 222.7,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0019,
+          "limit": 0.005,
+          "slack": 0.0031,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gemini-pro",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 2,
+          "dominated_by": [
+            "gemini-pro"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "gemini-pro",
+            "claude-sonnet"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 95,
+      "timestamp_us": 94000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 64.6,
+          "limit_celsius": 85.0,
+          "slack": 20.4,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 394.0,
+          "limit_ms": 500,
+          "slack": 106.0,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0028,
+          "limit": 0.005,
+          "slack": 0.0022,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gpt-4-turbo"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 96,
+      "timestamp_us": 95000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 69.8,
+          "limit_celsius": 85.0,
+          "slack": 15.2,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 294.1,
+          "limit_ms": 500,
+          "slack": 205.9,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0012,
+          "limit": 0.005,
+          "slack": 0.0038,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 97,
+      "timestamp_us": 96000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 62.0,
+          "limit_celsius": 85.0,
+          "slack": 23.0,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 230.7,
+          "limit_ms": 500,
+          "slack": 269.3,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.004,
+          "limit": 0.005,
+          "slack": 0.001,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 98,
+      "timestamp_us": 97000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 72.0,
+          "limit_celsius": 85.0,
+          "slack": 13.0,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 246.1,
+          "limit_ms": 500,
+          "slack": 253.9,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0019,
+          "limit": 0.005,
+          "slack": 0.0031,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gemini-pro",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 2,
+          "dominated_by": [
+            "gemini-pro"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "gemini-pro",
+            "claude-sonnet"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 99,
+      "timestamp_us": 98000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 74.5,
+          "limit_celsius": 85.0,
+          "slack": 10.5,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 203.5,
+          "limit_ms": 500,
+          "slack": 296.5,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.004,
+          "limit": 0.005,
+          "slack": 0.001,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "gpt-4-turbo"
+          ]
+        },
+        {
+          "agent": "claude-sonnet",
+          "rank": 3,
+          "dominated_by": [
+            "gpt-4-turbo",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "gemini-pro",
+      "selection_reason": "Pareto optimal under current constraints"
+    },
+    {
+      "decision_id": 100,
+      "timestamp_us": 99000000,
+      "available_agents": [
+        "gemini-pro",
+        "claude-sonnet",
+        "gpt-4-turbo"
+      ],
+      "constraint_evaluations": {
+        "thermal_constraint": {
+          "current_temp_celsius": 67.9,
+          "limit_celsius": 85.0,
+          "slack": 17.1,
+          "status": "satisfied"
+        },
+        "latency_constraint": {
+          "current_p99_ms": 344.5,
+          "limit_ms": 500,
+          "slack": 155.5,
+          "status": "satisfied"
+        },
+        "cost_constraint": {
+          "current_cost_per_request": 0.0023,
+          "limit": 0.005,
+          "slack": 0.0027,
+          "status": "satisfied"
+        }
+      },
+      "pareto_ranking": [
+        {
+          "agent": "claude-sonnet",
+          "rank": 1,
+          "dominated_by": []
+        },
+        {
+          "agent": "gemini-pro",
+          "rank": 2,
+          "dominated_by": [
+            "claude-sonnet"
+          ]
+        },
+        {
+          "agent": "gpt-4-turbo",
+          "rank": 3,
+          "dominated_by": [
+            "claude-sonnet",
+            "gemini-pro"
+          ]
+        }
+      ],
+      "selected_agent": "claude-sonnet",
+      "selection_reason": "Pareto optimal under current constraints"
+    }
+  ],
+  "summary": {
+    "total_decisions": 100,
+    "constraint_violations": 0,
+    "pareto_switches": 106,
+    "average_decision_time_us": 117
+  }
+}

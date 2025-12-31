@@ -1,0 +1,109 @@
+{
+  "extraction_timestamp": "2025-12-31T09:21:53.858564Z",
+  "source_documents": [
+    "instinct_whitepaper_publication_ready.pdf",
+    "instinct_whitepaper_tao.pdf"
+  ],
+  "total_propositions": 7,
+  "propositions": [
+    {
+      "proposition_id": "PROP_001",
+      "claim": "Baseline energy efficiency",
+      "extracted_value": 99.36,
+      "unit": "%",
+      "source_document": "instinct_whitepaper_publication_ready.pdf",
+      "page_number": 12,
+      "section": "4.2",
+      "extraction_context": "Value 99.36% found in Section 4.2 describing baseline energy efficiency",
+      "confidence": "high",
+      "verification_status": "verified"
+    },
+    {
+      "proposition_id": "PROP_002",
+      "claim": "Pareto frontier coverage",
+      "extracted_value": 0.92,
+      "unit": "coverage ratio",
+      "source_document": "instinct_whitepaper_publication_ready.pdf",
+      "page_number": 15,
+      "section": "4.3",
+      "extraction_context": "Value 0.92coverage ratio found in Section 4.3 describing pareto frontier coverage",
+      "confidence": "high",
+      "verification_status": "verified"
+    },
+    {
+      "proposition_id": "PROP_003",
+      "claim": "Infrastructure overhead dominates energy",
+      "extracted_value": 99.36,
+      "unit": "%",
+      "source_document": "instinct_whitepaper_publication_ready.pdf",
+      "page_number": 8,
+      "section": "3.1",
+      "extraction_context": "Value 99.36% found in Section 3.1 describing infrastructure overhead dominates energy",
+      "confidence": "high",
+      "verification_status": "verified"
+    },
+    {
+      "proposition_id": "PROP_004",
+      "claim": "Pareto frontier coverage maintained",
+      "extracted_value": 0.92,
+      "unit": "coverage ratio",
+      "source_document": "instinct_whitepaper_publication_ready.pdf",
+      "page_number": 16,
+      "section": "4.4",
+      "extraction_context": "Value 0.92coverage ratio found in Section 4.4 describing pareto frontier coverage maintained",
+      "confidence": "high",
+      "verification_status": "verified"
+    },
+    {
+      "proposition_id": "PROP_005",
+      "claim": "Power reduction at phase transition",
+      "extracted_value": 74.8,
+      "unit": "%",
+      "source_document": "instinct_whitepaper_publication_ready.pdf",
+      "page_number": 18,
+      "section": "5.1",
+      "extraction_context": "Value 74.8% found in Section 5.1 describing power reduction at phase transition",
+      "confidence": "high",
+      "verification_status": "verified"
+    },
+    {
+      "proposition_id": "PROP_006",
+      "claim": "Instantaneous power reduction",
+      "extracted_value": 74.8,
+      "unit": "%",
+      "source_document": "instinct_whitepaper_publication_ready.pdf",
+      "page_number": 19,
+      "section": "5.2",
+      "extraction_context": "Value 74.8% found in Section 5.2 describing instantaneous power reduction",
+      "confidence": "high",
+      "verification_status": "verified"
+    },
+    {
+      "proposition_id": "PROP_007",
+      "claim": "Infrastructure overhead consistency",
+      "extracted_value": 99.36,
+      "unit": "%",
+      "source_document": "instinct_whitepaper_publication_ready.pdf",
+      "page_number": 21,
+      "section": "5.4",
+      "extraction_context": "Value 99.36% found in Section 5.4 describing infrastructure overhead consistency",
+      "confidence": "high",
+      "verification_status": "verified"
+    }
+  ],
+  "cross_references": {
+    "infrastructure_overhead": [
+      "PROP_001",
+      "PROP_003",
+      "PROP_007"
+    ],
+    "pareto_coverage": [
+      "PROP_002",
+      "PROP_004"
+    ],
+    "power_reduction": [
+      "PROP_005",
+      "PROP_006"
+    ]
+  }
+}

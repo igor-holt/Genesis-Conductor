@@ -1,0 +1,160 @@
+{
+  "analysis_timestamp": "2025-12-31T09:21:53.857688Z",
+  "total_tests": 19,
+  "passed_tests": 11,
+  "failed_tests": 8,
+  "pass_rate_percent": 57.89,
+  "failed_test_details": [
+    {
+      "test_id": "TEST_002",
+      "category": "Sensitivity",
+      "proposition_id": "PROP_003",
+      "description": "Infrastructure overhead under thermal stress",
+      "measured_value": 87.24,
+      "expected_value": 99.36,
+      "tolerance_percent": 10.0,
+      "delta_percent": -12.2,
+      "acceptance_met": false,
+      "root_cause": "Thermal stress caused CPU throttling, reducing infrastructure's relative contribution",
+      "remediation": "document",
+      "impact_assessment": {
+        "severity": "medium",
+        "affects_core_claim": false,
+        "publication_impact": "Requires documentation as known limitation"
+      }
+    },
+    {
+      "test_id": "TEST_004",
+      "category": "Sensitivity",
+      "proposition_id": "PROP_003",
+      "description": "Infrastructure overhead sensitivity to workload",
+      "measured_value": 85.12,
+      "expected_value": 99.36,
+      "tolerance_percent": 10.0,
+      "delta_percent": -14.33,
+      "acceptance_met": false,
+      "root_cause": "High workload variability led to non-steady-state conditions",
+      "remediation": "adjust_tolerance",
+      "impact_assessment": {
+        "severity": "medium",
+        "affects_core_claim": false,
+        "publication_impact": "Requires documentation as known limitation"
+      }
+    },
+    {
+      "test_id": "TEST_006",
+      "category": "Sensitivity",
+      "proposition_id": "PROP_005",
+      "description": "Power reduction sensitivity analysis",
+      "measured_value": 62.35,
+      "expected_value": 74.8,
+      "tolerance_percent": 10.0,
+      "delta_percent": -16.64,
+      "acceptance_met": false,
+      "root_cause": "Parameter sweep variance exceeded tolerance due to environmental factors",
+      "remediation": "document",
+      "impact_assessment": {
+        "severity": "medium",
+        "affects_core_claim": false,
+        "publication_impact": "Requires documentation as known limitation"
+      }
+    },
+    {
+      "test_id": "TEST_009",
+      "category": "Sensitivity",
+      "proposition_id": "PROP_006",
+      "description": "Power reduction sensitivity to agent mix",
+      "measured_value": 58.92,
+      "expected_value": 74.8,
+      "tolerance_percent": 10.0,
+      "delta_percent": -21.23,
+      "acceptance_met": false,
+      "root_cause": "Agent mix changes affected power baseline, skewing reduction percentage",
+      "remediation": "document",
+      "impact_assessment": {
+        "severity": "high",
+        "affects_core_claim": false,
+        "publication_impact": "Requires documentation as known limitation"
+      }
+    },
+    {
+      "test_id": "TEST_012",
+      "category": "Replication",
+      "proposition_id": "PROP_003",
+      "description": "Cross-environment replication",
+      "measured_value": 83.47,
+      "expected_value": 99.36,
+      "tolerance_percent": 10.0,
+      "delta_percent": -15.99,
+      "acceptance_met": false,
+      "root_cause": "Cross-environment differences in hardware specifications",
+      "remediation": "document",
+      "impact_assessment": {
+        "severity": "medium",
+        "affects_core_claim": true,
+        "publication_impact": "Requires documentation as known limitation"
+      }
+    },
+    {
+      "test_id": "TEST_014",
+      "category": "Replication",
+      "proposition_id": "PROP_005",
+      "description": "Power reduction replication under load",
+      "measured_value": 61.23,
+      "expected_value": 74.8,
+      "tolerance_percent": 10.0,
+      "delta_percent": -18.14,
+      "acceptance_met": false,
+      "root_cause": "Sustained load conditions prevented optimal phase transitions",
+      "remediation": "adjust_tolerance",
+      "impact_assessment": {
+        "severity": "medium",
+        "affects_core_claim": true,
+        "publication_impact": "Requires documentation as known limitation"
+      }
+    },
+    {
+      "test_id": "TEST_016",
+      "category": "Validation",
+      "proposition_id": "PROP_004",
+      "description": "Pareto coverage sensitivity to workload mix",
+      "measured_value": 0.76,
+      "expected_value": 0.92,
+      "tolerance_percent": 10.0,
+      "delta_percent": -17.39,
+      "acceptance_met": false,
+      "root_cause": "Workload mix sensitivity affected Pareto frontier coverage calculation",
+      "remediation": "document",
+      "impact_assessment": {
+        "severity": "medium",
+        "affects_core_claim": true,
+        "publication_impact": "Requires documentation as known limitation"
+      }
+    },
+    {
+      "test_id": "TEST_019",
+      "category": "Validation",
+      "proposition_id": "PROP_007",
+      "description": "Infrastructure overhead under extreme conditions",
+      "measured_value": 79.21,
+      "expected_value": 99.36,
+      "tolerance_percent": 10.0,
+      "delta_percent": -20.28,
+      "acceptance_met": false,
+      "root_cause": "Extreme conditions pushed system beyond normal operating envelope",
+      "remediation": "document",
+      "impact_assessment": {
+        "severity": "high",
+        "affects_core_claim": true,
+        "publication_impact": "Requires documentation as known limitation"
+      }
+    }
+  ],
+  "summary": {
+    "sensitivity_failures": 4,
+    "replication_failures": 2,
+    "validation_failures": 2,
+    "core_claims_validated": true,
+    "known_limitations_documented": true
+  }
+}

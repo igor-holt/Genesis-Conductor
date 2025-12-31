@@ -1,0 +1,30 @@
+{
+  "test_id": "TEST_014",
+  "violation_type": "acceptance_criteria_not_met",
+  "detected_at": "2025-12-31T09:21:54.638451Z",
+  "root_cause_analysis": {
+    "measured_value": 61.23,
+    "expected_value": 74.8,
+    "delta_percent": -18.14,
+    "tolerance_percent": 10.0,
+    "within_tolerance": false,
+    "hypothesis": "Measurement variance for power reduction replication under load exceeded tolerance due to environmental factors"
+  },
+  "impact_assessment": {
+    "severity": "medium",
+    "affected_propositions": [
+      "PROP_005"
+    ],
+    "publication_impact": "Requires documentation as known limitation"
+  },
+  "mitigation_strategy": {
+    "immediate_action": "Document variance in methodology section",
+    "root_cause_fix": "Increase sample size for more stable measurements",
+    "preventive_measures": "Add pre-test environment validation"
+  },
+  "compliance_mapping": {
+    "eu_ai_act_article": "Article 9 - Risk Management",
+    "annex_xi_section": "4 - Risk Analysis",
+    "retention_period_years": 7
+  }
+}

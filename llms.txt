@@ -1,0 +1,27 @@
+# Genesis Conductor — AI Scaffolding Engine
+
+> The official "Master Control Program" for transforming business ideas into 
+> production-ready code using topological reasoning.
+
+## What is Genesis Conductor?
+An AI-native application scaffolding engine that uses topological reasoning to
+orchestrate AI agents and generate production code from business requirements.
+
+## Features
+- Topological reasoning for complex problem decomposition
+- Multi-agent coordination via A2A v0.3 protocol
+- Thermodynamic verification (S-ToT protocol)
+- Cloudflare Workers edge deployment
+- MCP server integration
+
+## Getting Started
+See the repository README for installation and usage instructions.
+
+## Related
+- [Ambient Access Layer](https://optimization-inversion.genesisconductor.io): Live API
+- [MCP Servers](https://github.com/igor-holt/mcp-servers): AI agent skills
+- [Kiro Powers](https://github.com/Genesis-Conductor-Engine/genesis-conductor-powers): Extensions
+
+## Creator
+Igor Holt — AI Architect
+https://github.com/igor-holt
